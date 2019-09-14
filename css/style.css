@@ -1,0 +1,21 @@
+body{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    background: #eee;
+    height: 50rem;
+    width: 80rem;
+    margin: 3rem auto;
+    grid-row-gap: 1rem;
+
+
+}
+
+/* give all a background of white */
