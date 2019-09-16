@@ -1,21 +1,286 @@
+:root {
+    --pad: 1.5rem 1rem;
+}
 body{
     font-size: 62.5%;
     padding: 0;
-    margin: 0%;
+    margin: 0;
+    /* margin: 6rem ; */
+    /* height: 100vh; */
+    box-sizing: border-box;  
 }
-
+.content {
+    padding:0;
+    margin: 0;
+}
 .wrapper {
+    /* font-size: 1.4rem; */
+    /* font-family: lato; */
     display: grid;
     grid-template-columns: repeat(5 ,1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    background: #eee;
-    height: 50rem;
-    width: 80rem;
-    margin: 3rem auto;
-    grid-row-gap: 1rem;
+    background: #EEEFF2;
+    height: 100%;
+    /* grid-auto-rows: minmax(40rem, auto); */
+    width: 100%;
+    grid-row-gap: 1rem; 
+    /* border: 1rem solid #EEEFF2; */
 
 
 }
 
 /* give all a background of white */
+.turkish-logo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1rem solid #EEEFF2;
+    border-left: 1rem solid #EEEFF2;
+
+
+}
+
+.row {
+    background: #FFFFFF;
+    padding: var(--pad);
+    /* border-left: 1rem solid #EEEFF2 */
+
+}
+
+.name {
+    font-family: sans-serif;
+    color: #777;
+    font-size: 1.4rem;
+
+}
+
+
+
+
+.trip {
+    color: #bbb;
+    font-family: Lato;
+    font-size: 1.3rem;
+    margin-left: -3rem;
+    margin-bottom: -5rem;
+
+}
+
+.trip span {
+    color: #aaa !important;
+}
+
+.turkish-date {
+    display: flex;
+    flex-direction: column;
+    font-family: lato;
+    font-weight: 400;
+    align-items: center;
+    border-top: 1rem solid #EEEFF2;
+
+    
+    
+}
+
+.date-1 {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.date-2 {
+    font-size: 1.3rem;
+    color: #666;
+    margin-top: 2rem;
+}
+
+.row span {
+    font-weight: bold;
+    color: #000;
+    margin-left: 1rem;
+    display: inline;
+    font-size: 1.4rem;
+}
+/* 
+.bod-left {
+    border-left: 1rem solid #EEEFF2;
+} */
+
+
+.turkish-one-way {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1rem solid #EEEFF2;
+
+}
+
+.image-two {
+    margin-top: 2rem;
+}
+
+.turkish-time {
+    font-family: lato;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-top: 1rem solid #EEEFF2;
+
+}
+
+.time-1 {
+    font-size: 1.3rem;
+    color: #666;
+
+}
+.time-1 span {
+    margin-right: 2rem;
+}
+
+.time-2 span {
+    margin-right: 2rem;
+    
+}
+
+.time-2 {
+    font-size: 1.3rem;
+    color: #666;
+    margin-top: 2rem;
+}
+.review {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+    margin-left: -4rem;
+}
+
+.review-score {
+    font-family: lato;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.review-score span {
+    margin-right: .5rem;
+}
+
+.review a {
+    color: #777;
+    font-size: 1rem;
+    margin-right: 1.3rem; 
+    display: block;
+}
+
+.turkish-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Slack-Lato,appleLogo,sans-serif;
+    border-left: 1px solid #ddd;
+    border-top: 1rem solid #EEEFF2;
+    border-right: 1rem solid #EEEFF2;
+   /* align-content: space-; */
+
+
+}
+
+
+
+.total {
+    font-size: 1.4rem;
+}
+
+button {
+    border: none;
+    background: #FA6911;
+    color: #fff;
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    opacity: .9;
+}
+
+
+/* Ethopian name */
+.ethopian-logo-name {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1rem solid #EEEFF2;
+
+}
+
+.ethopian-date {
+     display: flex;
+    flex-direction: column;
+    font-family: lato;
+    font-weight: 400;
+    align-items: center;
+}
+
+.ethopian-way {
+
+}
+
+.ethopian-time {
+ font-family: lato;
+    display: flex;
+    flex-direction: column;
+}
+
+.ethopian-price {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Slack-Lato,appleLogo,sans-serif;
+    border-left: 1px solid #ddd;
+    border-right: 1rem solid #EEEFF2;
+
+}
+
+
+/* italy section */
+.italy-logo-name {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1rem solid #EEEFF2;
+    border-left: 1rem solid #EEEFF2;
+
+
+}
+
+.italy-date {
+     display: flex;
+    flex-direction: column;
+    font-family: lato;
+    font-weight: 400; 
+    align-items: center;
+    border-bottom: 1rem solid #EEEFF2;
+
+
+}
+
+.italy-one-way {
+    border-bottom: 1rem solid #EEEFF2;
+
+}
+
+.italy-time {
+ font-family: lato;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1rem solid #EEEFF2;
+
+}
+
+.italy-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Slack-Lato,appleLogo,sans-serif;
+    border-left: 1px solid #ddd;
+    border-bottom: 1rem solid #EEEFF2;
+    border-right: 1rem solid #EEEFF2;
+
+
+}
