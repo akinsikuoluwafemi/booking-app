@@ -64,6 +64,8 @@ body {
 .log-in:hover {
     background: #fff;
     color: #FA7933;
+    transition: all .3s;
+
 }
 
 .join {
@@ -73,6 +75,9 @@ body {
 }
 .join:hover {
     color: #FA7933;
+    transition: all .2s;
+
+
     
 }
 
@@ -177,11 +182,15 @@ select {
     width: 10rem;
     height: 2rem;
     color: #000000;
+    
 
 }
 
 select:focus, input[type="text"]:focus {
     outline: 1px solid #FA7933;
+    transition: all .9s;
+    border: none;
+
 }
 
 
@@ -210,6 +219,7 @@ input[type="text"] {
 input[type="text"]::-webkit-input-placeholder {
     color: #000;
     font-weight: 100;
+
 
 }
 
