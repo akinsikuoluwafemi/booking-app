@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .section-header {
@@ -110,6 +112,57 @@ img {
 
 }
 
+/* form input-start */
+.form-input {
+    margin-top: 2rem;
+    position: relative;
+}
+input[type="password"],
+input[type="email"] {
+    padding: .5rem;
+    outline: none;
+    width: 9rem;
+
+}
+
+input[type="password"]:focus,
+input[type="email"]:focus {
+    padding: .5rem;
+    outline: none;
+
+}
+
+input[type="submit"] {
+    padding: .5rem;
+    margin-left: 6rem;
+    border-radius: .5rem;
+    width: 10%;
+    
+}
+
+#confirm-one,#confirm-two {
+    margin-left: 2rem;
+}
+
+.check {
+    position: absolute;
+    bottom: 5rem;
+    left: 11.3rem;
+}
+
+.date-input {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+input[type="password"]::-webkit-input-placeholder {
+
+}
+
+
+
+/* form input-end */
+
 /* Section-form */
 .form {
     border: .5px solid #dddcdc;
@@ -186,10 +239,9 @@ select {
 
 }
 
-select:focus, input[type="text"]:focus {
-    outline: 1px solid #FA7933;
+select:focus, input[type="text"]:focus,input[type="password"]:focus {
+    /* outline: 1px solid #FA7933; */
     transition: all .9s;
-    border: none;
 
 }
 

@@ -42,10 +42,10 @@
                <p class="form-text-paragraph">Please enter your title, first name(s) and last name exactly as they appear on your passport.</p>
                 
                 <p>That way, we can make sure your miles are added to your Flying Club account, where they belong.</p>
-               <form action="#" method="get">
+               <form action="#" method="POST">
 
                 <label for="title">Title</label><br/>
-                <select id="title" name="title" required >
+                <select id="title" name="title" >
                     <option>Please Select</option>
                     <option>Mr</option>
                     <option>Mrs</option>
@@ -60,15 +60,15 @@
                 <div class="all-names">
                         <div class="first">
                             <label for="first-name">First name</label><br/>
-                            <input id="first-name" type="text" placeholder="First name.." required>
+                            <input id="first-name" type="text" placeholder="First name..">
                         </div>
                         <div class="middle">
                             <label for="middle-name">Middle name/initial (optional)</label><br />
-                            <input type="text" id="middle-name" placeholder="Middle name/initial.." required>
+                            <input type="text" id="middle-name" placeholder="Middle name/initial..">
                         </div>
                         <div class="last">
                             <label for="last-name">Last name</label><br />
-                            <input type="text" id="last-name" placeholder="Last name.." required>
+                            <input type="text" id="last-name" placeholder="Last name..">
                         </div>
 
             
@@ -80,7 +80,7 @@
                 <input type="radio" name="sex"><p>Female</p>
 
                 <label class="date">Date of birth</label>
-                <select class="select"required>
+                <select class="select">
                     <option>Day</option>
                         <option>01</option>
                         <option>02</option>
@@ -95,7 +95,7 @@
                         <option>11</option>
                 </select>
 
-                    <select class="select" required>
+                    <select class="select" >
                         <option>Month</option>
                         <option>Jan</option>
                         <option>Feb</option>
@@ -110,7 +110,7 @@
                         <option>Nov</option>
                     </select>
 
-                    <select class="select" required>
+                    <select class="select">
                         <option>Year</option>
                         <option>2019</option>
                         <option>2018</option>
@@ -123,9 +123,23 @@
                         <option>2011</option>
                         <option>2010</option>
                         <option>2011</option>
-                    </select>
-               </form>
+                    </select><br/>
 
+                    <div class="form-input">
+                        <label class="date-input" for="password">Password</label>
+                        <input class="passone" id="password" type="password" required placeholder="password"> <span id="confirm-one">Password must be 7 and 10 characters long</span>
+
+                        <label class="date-input" for="confirm-password">Confirm password</label>
+                        <input class="passtwo" id="confirm-password" type="password" required placeholder="password"> <span id="confirm-two">Not equal</span><img class="check" src="images/Checkbox.svg">
+
+                        <label class="date-input" for="email">Email Address</label>
+                        <input id="email" type="email"  placeholder="email"required>
+
+                        <input  id="submit" disabled type="submit">
+
+                    </div>
+               </form>
+               
            </div>
 
 
@@ -134,8 +148,10 @@
        <div class="form-steps">
            <div class="personal">
                 <h2> Set up your log in details</h2>
-                <p class="steps">Step 2 of 5</p>
+                <p class="steps">Step 2 of 5</p>    
+               
            </div>
+            
             
        </div>
 
@@ -166,6 +182,6 @@
 
    </section>
     
-    
+    <script src="app.js"></script>
 </body>
 </html>
